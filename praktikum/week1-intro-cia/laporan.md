@@ -1,9 +1,9 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 1 
-Topik: [Sejarah Kriptografi & prinsip CIA]  
-Nama: [Lutfiyah Pratama Sari]  
-NIM: [230202826]  
-Kelas: [5 IKRA]  
+Topik: Sejarah Kriptografi & prinsip CIA 
+Nama: Lutfiyah Pratama Sari  
+NIM: 230202826  
+Kelas: 5 IKRA  
 
 Laporan Minggu 1
 
