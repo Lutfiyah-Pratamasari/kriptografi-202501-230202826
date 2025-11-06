@@ -27,9 +27,6 @@ C. Mengklasifikasikan jenis kriptosistem (simetris dan asimetris).
 
 3. Implementasi Program Enkripsi dan Deskripsi
    Program berikut merupakan simulasi Caesar Cipher, yaitu algoritma substitusi sederhana dengan pergeseran huruf sebanyak nilai kunci tertentu
-   
-# file: praktikum/week2-cryptosystem/src/simple_crypto.py
-
 def encrypt(plaintext, key):
     result = ""
     for char in plaintext:
