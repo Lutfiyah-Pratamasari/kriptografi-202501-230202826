@@ -61,9 +61,9 @@ if __name__ == "__main__":
     print("Decrypted :", dec)
 
 4. Hasil eksekusi
-    ![Diagram kriptosistem](hasil eksekusi.png)
+    ![Deskrpsi Gambar](screenshoot/hasil eksekusi.png)
 
-5. Klasifikasi Simetris dan Asimetris
+6. Klasifikasi Simetris dan Asimetris
    - Kriptografi Simetris : sistem enkripsi yang menggunakan satu kunci yang sama untuk proses ekripsi dan deskripsi (AES, DES)
      Sistem ini leboh cepat dan efisien, namun memiliki kelemahan pada keamanan distribusi kunci karena kunci harus dibagi kepada pihak lain. 
    - Kriptografi Asimetris : menggunakan dua kunci berbeda (RSA, ECC)
