@@ -1,95 +1,38 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 3 
+
 Topik: Modular Math 
+
 Nama: Lutfiyah Pratama Sari
+
 NIM: 230202826
+
 Kelas: 5 IKRA 
 
----
+a.) Aritmatika Modular
+Operasi modular dasar yaitu operasi matematika yang dilakukan modulo n (mengambil sisa bagi setelah operasi)
+menghitung (a+b) mod n
+contoh : 7+5 mod 12 = 12 mod 12 = 0
 
-## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+b.) GCD & Algoritma Euclidean
+GCD adalah bilangan bulat terbesar yang dapat membagi habis dua bilangan tanpa sisa
+Contoh : 
+faktor dari 54 = 1, 2, 3, 6, 9, 18, 27, 54
+faktor dari 24 = 1, 2, 3, 4, 6, 8, 12, 24
+faktor yang sama =1, 2, 3, 6
+faktor terbesar yang sama adalah 6
 
----
+c.) Extended Euclidean Algorithm
+Bisa digunakan untuk mencari invers modular, yang sangat penting dalam kriptografi asimetris misalnya RSA
 
-## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+d.) Logaritma Diskrit
+disebut logaritma diskrit karena mirip logaritma biasa, bedanya ini dipakai untuk bilangan yang dihitung dengan sisa bagi
+masalah ini sangat sulit diselesaikan kalau angkanya besar, jadi sering digunakan sebagai dasar keamanan dalam kriptografi modern, seperti pada sistem enkripsi dan pertukaran kunci rahasia.
 
----
-
-## 3. Alat dan Bahan
-(- Python 3.x  
-- Visual Studio Code / editor lain  
-- Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
-
----
-
-## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
-2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
-
----
-
-## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
-
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
-```
-)
-
----
-
-## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
-
-Hasil eksekusi program Caesar Cipher:
-
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
-
----
-
-## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
----
-
-## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
-
----
-
-## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
-
----
-
-## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
-
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
-```
+PERTANYAAN DISKUSI
+1. Apa peran aritmetika modular dalam kriptografi modern?
+   digunakan untuk menjaga hasil enkripsi tetap dalam batas tertentu dan membuat proses enkripsi-deskripsi aman.
+2. Mengapa invers modular penting dalam algoritma kunci publik (misalnya RSA)?
+   diperlukan untuk membalik proses enkripsi menjadi deskripsi, seperti pada algoritma RSA
+3. Apa tantangan utama dalam menyelesaikan logaritma diskrit untuk modulus besar?
+   sulit dihitung jika modulusnya besar, sehingga butuh waktu lama dan membuat sistem kriptografi tetap aman.
