@@ -28,7 +28,8 @@ C. Mengklasifikasikan jenis kriptosistem (simetris dan asimetris).
 
   Enkripsi : Plaintext diubah menjadi Ciphertext menggunakan algoritma dan kunci.
   Deskripsi : Ciphertext diubah kembali menjadi Plaintext menggunakan algoritma dan kunci yang sama (atau berbeda tergantung jenis sistemnya)
-
+  
+---
 3. Implementasi Program Enkripsi dan Deskripsi
    Program berikut merupakan simulasi Caesar Cipher, yaitu algoritma substitusi sederhana dengan pergeseran huruf sebanyak nilai kunci tertentu
 
@@ -63,16 +64,16 @@ if __name__ == "__main__":
     print("Plaintext :", message)
     print("Ciphertext:", enc)
     print("Decrypted :", dec)
-
+---
 4. Hasil eksekusi
     ![Deskrpsi Gambar](screenshoot/hasil eksekusi.png)
-
+---
 5. Klasifikasi Simetris dan Asimetris
    - Kriptografi Simetris : sistem enkripsi yang menggunakan satu kunci yang sama untuk proses ekripsi dan deskripsi (AES, DES)
      Sistem ini leboh cepat dan efisien, namun memiliki kelemahan pada keamanan distribusi kunci karena kunci harus dibagi kepada pihak lain. 
    - Kriptografi Asimetris : menggunakan dua kunci berbeda (RSA, ECC)
      lebih aman, karena kunci privat tidak perlu dibagikan tetapi proses enkripsi dan deskripsinya lebih lambat karena perhitungannya lebih kompleks.
-
+---
   PERTANYAAN DISKUSI
 1. Sebutkan komponen utama dalam sebuah kriptosistem?
    plaintext, ciphertext, algoritma enkripsi, algoritma deskripsi, kunci (key)
