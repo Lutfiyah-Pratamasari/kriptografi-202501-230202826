@@ -60,7 +60,8 @@ if __name__ == "__main__":
     print("Ciphertext:", enc)
     print("Decrypted :", dec)
 
-4. Hasil eksekusi ![Deskripsi gambar](hasil eksekusi.png)
+4. Hasil eksekusi
+    ![Diagram kriptosistem](hasil eksekusi.png)
 
 5. Klasifikasi Simetris dan Asimetris
    - Kriptografi Simetris : sistem enkripsi yang menggunakan satu kunci yang sama untuk proses ekripsi dan deskripsi (AES, DES)
