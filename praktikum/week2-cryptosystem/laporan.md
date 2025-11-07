@@ -75,11 +75,11 @@ if __name__ == "__main__":
 2. Apa kelebihan dan kelemahan sistem simetris dibandingkan asimetris?
 
    simetris
-   kelebihan : yaitu proses ekripsi dan deskripsi lebih cepat dan efisien
+   kelebihan : yaitu proses ekripsi dan deskripsi lebih cepat dan efisien,
    kekurangan : lebih aman karena tidak memerlukan pertukaran kunci rahasia
 
    asimetris
-   kelebihan : distribusi kunci tidak aman, karena kuncu harus dibagikan ke penerima
+   kelebihan : distribusi kunci tidak aman, karena kuncu harus dibagikan ke penerima,
    kekurangan : proses enkripsi-deskripsi lebih lambat karena kompleksitas tinggi
 4. Mengapa distribusi kunci menjadi masalah utama dalam kriptografi simetris?
    karena pengirim dan penerima harus memiliki kunci yang sama, dan kunci tersebut harus dikirim melalui saluran komunikasi. 
