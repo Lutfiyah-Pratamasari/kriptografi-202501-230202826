@@ -18,7 +18,7 @@ C. Mengklasifikasikan jenis kriptosistem (simetris dan asimetris).
    Kunci (Key) : Nilai rahasia yang digunakan dalam proses enkripsi dan dekripsi.
    Algoritma : Metode matematis untuk mengubah plaintext menjadi ciphertext dan sebaliknya.
 
-3. Skema Dasar Kriptosystem
+2. Skema Dasar Kriptosystem
    Proses enkripsi dan deskripsi dapat dijelaskan melalui diagram berikut :
    ![Diagram Kriptosistem](screenshots/diagram_kriptosistem.png)
 
@@ -60,5 +60,24 @@ if __name__ == "__main__":
     print("Ciphertext:", enc)
     print("Decrypted :", dec)
 
-4. Hasil eksekusi
-   
+4. Hasil eksekusi ![Deskripsi gambar](hasil eksekusi.png)
+
+5. Klasifikasi Simetris dan Asimetris
+   - Kriptografi Simetris : sistem enkripsi yang menggunakan satu kunci yang sama untuk proses ekripsi dan deskripsi (AES, DES)
+     Sistem ini leboh cepat dan efisien, namun memiliki kelemahan pada keamanan distribusi kunci karena kunci harus dibagi kepada pihak lain. 
+   - Kriptografi Asimetris : menggunakan dua kunci berbeda (RSA, ECC)
+     lebih aman, karena kunci privat tidak perlu dibagikan tetapi proses enkripsi dan deskripsinya lebih lambat karena perhitungannya lebih kompleks.
+
+  PERTANYAAN DISKUSI
+1. Sebutkan komponen utama dalam sebuah kriptosistem?
+   plaintext, ciphertext, algoritma enkripsi, algoritma deskripsi, kunci (key)
+2. Apa kelebihan dan kelemahan sistem simetris dibandingkan asimetris?
+   simetris
+   kelebihan : yaitu proses ekripsi dan deskripsi lebih cepat dan efisien
+   kekurangan : lebih aman karena tidak memerlukan pertukaran kunci rahasia
+
+   asimetris
+   kelebihan : distribusi kunci tidak aman, karena kuncu harus dibagikan ke penerima
+   kekurangan : proses enkripsi-deskripsi lebih lambat karena kompleksitas tinggi
+3. Mengapa distribusi kunci menjadi masalah utama dalam kriptografi simetris?
+   karena pengirim dan penerima harus memiliki kunci yang sama, dan kunci tersebut harus dikirim melalui saluran komunikasi. 
