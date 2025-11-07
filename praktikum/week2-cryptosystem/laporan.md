@@ -73,6 +73,7 @@ if __name__ == "__main__":
 1. Sebutkan komponen utama dalam sebuah kriptosistem?
    plaintext, ciphertext, algoritma enkripsi, algoritma deskripsi, kunci (key)
 2. Apa kelebihan dan kelemahan sistem simetris dibandingkan asimetris?
+
    simetris
    kelebihan : yaitu proses ekripsi dan deskripsi lebih cepat dan efisien
    kekurangan : lebih aman karena tidak memerlukan pertukaran kunci rahasia
@@ -80,5 +81,5 @@ if __name__ == "__main__":
    asimetris
    kelebihan : distribusi kunci tidak aman, karena kuncu harus dibagikan ke penerima
    kekurangan : proses enkripsi-deskripsi lebih lambat karena kompleksitas tinggi
-3. Mengapa distribusi kunci menjadi masalah utama dalam kriptografi simetris?
+4. Mengapa distribusi kunci menjadi masalah utama dalam kriptografi simetris?
    karena pengirim dan penerima harus memiliki kunci yang sama, dan kunci tersebut harus dikirim melalui saluran komunikasi. 
