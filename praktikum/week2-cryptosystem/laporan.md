@@ -1,8 +1,12 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 2  
+
 Topik: Cryptosystem (Komponen, Enkripsi & Dekripsi, Simetris & Asimetris)  
+
 Nama: Lutfiyah Pratama Sari
+
 NIM: 230202826
+
 Kelas: 5 IKRA
 
 Tujuan Pembelajaran
@@ -63,7 +67,7 @@ if __name__ == "__main__":
 4. Hasil eksekusi
     ![Deskrpsi Gambar](screenshoot/hasil eksekusi.png)
 
-6. Klasifikasi Simetris dan Asimetris
+5. Klasifikasi Simetris dan Asimetris
    - Kriptografi Simetris : sistem enkripsi yang menggunakan satu kunci yang sama untuk proses ekripsi dan deskripsi (AES, DES)
      Sistem ini leboh cepat dan efisien, namun memiliki kelemahan pada keamanan distribusi kunci karena kunci harus dibagi kepada pihak lain. 
    - Kriptografi Asimetris : menggunakan dua kunci berbeda (RSA, ECC)
@@ -81,5 +85,5 @@ if __name__ == "__main__":
    asimetris
    kelebihan : distribusi kunci tidak aman, karena kuncu harus dibagikan ke penerima,
    kekurangan : proses enkripsi-deskripsi lebih lambat karena kompleksitas tinggi
-4. Mengapa distribusi kunci menjadi masalah utama dalam kriptografi simetris?
+3. Mengapa distribusi kunci menjadi masalah utama dalam kriptografi simetris?
    karena pengirim dan penerima harus memiliki kunci yang sama, dan kunci tersebut harus dikirim melalui saluran komunikasi. 
