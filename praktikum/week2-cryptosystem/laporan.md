@@ -21,7 +21,7 @@ C. Mengklasifikasikan jenis kriptosistem (simetris dan asimetris).
    Ciphertext : Pesan hasil enkripsi yang tidak dapat dibaca tanpa kunci.
    Kunci (Key) : Nilai rahasia yang digunakan dalam proses enkripsi dan dekripsi.
    Algoritma : Metode matematis untuk mengubah plaintext menjadi ciphertext dan sebaliknya.
-
+---
 2. Skema Dasar Kriptosystem
    Proses enkripsi dan deskripsi dapat dijelaskan melalui diagram berikut :
    ![Diagram Kriptosistem](screenshots/diagram_kriptosistem.png)
