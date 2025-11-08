@@ -74,7 +74,7 @@ print("Waktu brute force AES-128 =", brute_force_time(2**128), "hari")
 
 ## Hasil eksekusi
 hasil program disimpan pada :
-![hasil eksekusi] (screenshoot/hasil eksekusi.png)
+folder screenshoot
 
 ---
 ## Analisis hasil
