@@ -1,14 +1,21 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 5
+
+Topik: Cipher Klasik
+
+Nama: Lutfiyah Pratama Sari
+
+NIM: 230202826
+
+Kelas: 5 IKRA 
 
 ---
 
-## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+##  Tujuan Pembelajaran
+## a. Menerapkan algoritma Caesar Cipher untuk enkripsi dan dekripsi teks.
+## b. Menerapkan algoritma Vigenère Cipher dengan variasi kunci.
+## c. Mengimplementasikan algoritma transposisi sederhana.
+## d. Menjelaskan kelemahan algoritma kriptografi klasik.
 
 ---
 
