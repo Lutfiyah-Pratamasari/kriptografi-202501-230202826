@@ -66,7 +66,8 @@ if __name__ == "__main__":
     print("Decrypted :", dec)
 ---
 4. Hasil eksekusi
-    ![Deskrpsi Gambar](screenshoot/hasil eksekusi.png)
+
+    hasil tersimpan didalam folder screenshoot
 ---
 5. Klasifikasi Simetris dan Asimetris
    - Kriptografi Simetris : sistem enkripsi yang menggunakan satu kunci yang sama untuk proses ekripsi dan deskripsi (AES, DES)
@@ -86,5 +87,7 @@ if __name__ == "__main__":
    asimetris
    kelebihan : distribusi kunci tidak aman, karena kuncu harus dibagikan ke penerima,
    kekurangan : proses enkripsi-deskripsi lebih lambat karena kompleksitas tinggi
+   
 3. Mengapa distribusi kunci menjadi masalah utama dalam kriptografi simetris?
-   karena pengirim dan penerima harus memiliki kunci yang sama, dan kunci tersebut harus dikirim melalui saluran komunikasi. 
+
+    karena pengirim dan penerima harus memiliki kunci yang sama, dan kunci tersebut harus dikirim melalui saluran komunikasi. 
