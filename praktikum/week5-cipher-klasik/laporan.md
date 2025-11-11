@@ -29,3 +29,4 @@ b. Vigenere Cipher : metode penyandian yang menggunakan kata kunci untuk menentu
 c. Transposisi Cipher : mengubah urutan huruf dalam pesan tanpa mengganti hurufnya, sehingga teks menjadi sulit dibaca. 
 
 ---
+
