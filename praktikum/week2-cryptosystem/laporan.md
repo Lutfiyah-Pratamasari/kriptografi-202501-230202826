@@ -12,8 +12,12 @@ Kelas: 5 IKRA
 Tujuan Pembelajaran
 Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:
 A. Mengidentifikasi komponen dasar kriptosistem (plaintext, ciphertext, kunci, algoritma).
-B. Menggambarkan proses enkripsi dan dekripsi sederhana.
+
+B. Menggambarkan proses enkripsi dan deskripsi sederhana.
+
 C. Mengklasifikasikan jenis kriptosistem (simetris dan asimetris).
+
+---
 
 1. Komponen Dasar Kriptosistem
    Sebuah kriptosistem terdiri dari beberapa komponen utama sebagai berikut:
