@@ -52,7 +52,7 @@ c. Transposisi Cipher : mengubah urutan huruf dalam pesan tanpa mengganti hurufn
 
 ## 3. Screenshoot Hasil Program
 Berikut tampilan hasil eksekusi program di terminal :
-![Hasil Uji Coba ] (screenshoot/hasil.png)
+ada di folder screenshoot
 
 ---
 
