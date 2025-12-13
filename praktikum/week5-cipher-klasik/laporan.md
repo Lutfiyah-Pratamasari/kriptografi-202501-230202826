@@ -14,7 +14,9 @@ Kelas: 5 IKRA
 ##  Tujuan Pembelajaran
  a. Menerapkan algoritma Caesar Cipher untuk enkripsi dan dekripsi teks.
  b. Menerapkan algoritma Vigenère Cipher dengan variasi kunci.
+ 
  c. Mengimplementasikan algoritma transposisi sederhana.
+ 
  d. Menjelaskan kelemahan algoritma kriptografi klasik.
  
 ---
