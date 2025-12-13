@@ -40,7 +40,7 @@ c. Transposisi Cipher : mengubah urutan huruf dalam pesan tanpa mengganti hurufn
 ### Vigenere Cipher
 | Plaintext | Key | Ciphertext | Decrypted |
 |------------|-----|-------------|-----------|
-| KRIPTOGRAFI | KEY | URMVXYSLC3Q | KRIPTOGRAFI |
+| KRIPTOGRAFI | KEY | URMVXYSLCQ | KRIPTOGRAFI |
 
 ### Transposisi Cipher
 | Plaintext | Key | Ciphertext | Decrypted |
@@ -56,4 +56,20 @@ Berikut tampilan hasil eksekusi program di terminal :
 ## 4. Jawaban Pertanyaan diskusi 
 
 1. Kelemahan caesar & Vigenere Cipher
-   - Caesar Cipher hanya memiliki 25 kemungkinan kunci yaitu  
+   - Caesar Cipher hanya memiliki 25 kemungkinan kunci yaitu mudah dibobol brute force.
+   - Vigenere Cipher tampak lebih kuat, tetapi masi bisa diserang dengan analisis frekuensi atau metode kasiski jika panjang kunci diketahui.
+
+ 2. Cipher Klasik mudah diserang analisis frekuensi karena, pola huruf dalam bahasa alami (misalnya huruf 'E' paling sering muncul dalam bahasa inggris) tetapterlihat ciphertext jika metode enkripsi hanya mengganti huruf tanpa mengacak struktur kalimat.
+
+ 3. Substitusi vs Transposisi
+    | Aspek | Substitusi (Caesar/Vigenere) | Transposisi |
+    |--------|------------------------------|-------------|
+    | Metode | Mengganti huruf | Menukar posisi huruf |
+    | Pola frekuensi | Tetap sama | Agak tersembunyi |
+    | Kelemahan | Mudah dianalisis pola huruf | Mudah dianalisis struktur |
+    | Contoh | Caesar, Vigenere | Rail fence, Columar Transposition |
+
+    ---
+## 5. Kesimpulan 
+algoritma kriptografi klasik efektif untuk pembelajaran dasar tetapi tidak aman untuk penggunaan modern karena mudah dianalisis.
+Teknologi modern seperti **AES**,**RSA**, DAN **ECC** kini digunakan untuk keamanan digital nyata
