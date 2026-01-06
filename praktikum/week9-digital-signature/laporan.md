@@ -1,20 +1,28 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 9
+
+Topik: Digital Signature (RSA/DSA)
+
+Nama: Lutfiyah Pratama Sari
+
+NIM: 230202826
+
+Kelas: 5 IKRA
 
 ---
 
-## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+## Tujuan
+Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:
+
+1. Mengimplementasikan tanda tangan digital menggunakan algoritma RSA/DSA.
+2. Memverifikasi keaslian tanda tangan digital.
+3. Menjelaskan manfaat tanda tangan digital dalam otentikasi pesan dan integritas data.
 
 ---
 
-## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+## Dasar Teori
+Digital signature merupakan metode keamanan berbasis kriptografi yang digunakan untuk menjamin keaslian dan keutuhan dokumen atau data elektronik. Tanda tangan digital berfungsi sebagai identitas pengirim, sehingga penerima dapat memastikan bahwa informasi berasal dari pihak yang sah dan tidak mengalami perubahan selama proses pengiriman.
+Konsep digital signature menggunakan sepasang kunci, yaitu kunci privat untuk membuat tanda tangan dan kunci publik untuk memverifikasi keabsahannya. Dengan mekanisme ini, digital signature mampu memberikan jaminan autentikasi, integritas data, dan non-repudiation, sehingga banyak diterapkan pada transaksi elektronik dan sistem berbasis web.
 
 ---
 
