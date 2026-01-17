@@ -65,6 +65,7 @@ Cipher Modern adalah metode kriptografi yang digunakan algoritma matematis dan k
 
 ## Implementasi Praktikum
 ### DES
+```python
 from Crypto.Cipher import DES
 from Crypto.Random import get_random_bytes
 
@@ -81,7 +82,5 @@ print("Decrypted:", decrypted)
 
 ---
 
-### DES
-! [Hasil DES](screensghoot/DES.png) 
-
-### AES
+## DES  
+! [Hasil DES](screensghootDES.png) 
