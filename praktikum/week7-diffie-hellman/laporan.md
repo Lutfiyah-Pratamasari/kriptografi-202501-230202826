@@ -12,7 +12,7 @@ Kelas: 5 IKRA
 
 ---
 
-## Tujuan
+## 1. Tujuan
 Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu :
 1. Melakukan simulasi protokol Diffie-Hellman untuk pertukaran kunci publik
 2. Menjelaskan mekanisme pertukaran kunci rahasia menggunakan bilangan prima dan logaritma diskrit
@@ -20,12 +20,12 @@ Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu :
    
 ---
 
-## Dasar Teori
+## 2. Dasar Teori
 Diffie–Hellman Key Exchange adalah teknik kriptografi kunci publik yang memungkinkan dua pihak membentuk sebuah kunci rahasia bersama melalui jaringan yang tidak aman. Metode ini diperkenalkan oleh Whitfield Diffie dan Martin Hellman pada tahun 1976, dengan tujuan utama menghindari pengiriman kunci rahasia secara langsung agar tidak mudah disadap oleh pihak yang tidak berwenang. 
 
 ---
 
-## Prinsip Kerja Diffie-Hellman 
+## 3. Prinsip Kerja Diffie-Hellman 
 Diffie-Hellman memungkinkan dua pihak (Alice dan Bob) menghasilkan **kunci rahasia bersama** meskipun hanya bertukar informasi melalui jaringan publik.
 
 Prosesnya:
@@ -47,7 +47,7 @@ Nilai keduanya akan sama karena sifat aritmetika modular:
 
 ---
 
-## Implementasi Program
+## 4. Implementasi Program
 ```python
 import random
 
@@ -71,11 +71,11 @@ print("Kunci bersama Alice :", shared_secret_A)
 print("Kunci bersama Bob   :", shared_secret_B)
 ```
 ---
-## Hasil eksekusi
+## 5. Hasil eksekusi
 ada didalam folder screenshot
 
 ---
-## Simulasi serangan MITM
+## 6. Simulasi serangan MITM
 Pada serangan MITM:
 
 - Eve mencegat **public key A** dan **B**.
@@ -100,7 +100,7 @@ Sehingga Eve dapat membaca semua pesan terenkripsi.
 **Kesimpulan:** Diffie-Hellman murni rentan MITM jika tidak memakai autentikasi.
 
 ---
-## Pertanyaan diskusi
+## 7. Pertanyaan diskusi
 1. Mengapa Diffie-Hellman memungkinkan pertukaran kunci di saluran publik?
    
    Diffie–Hellman memungkinkan pertukaran kunci di saluran publik karena kunci rahasia tidak pernah dikirim, hanya nilai publik yang sulit diturunkan kembali akibat kompleksitas logaritma diskrit.
@@ -114,14 +114,14 @@ Sehingga Eve dapat membaca semua pesan terenkripsi.
    Pencegahan MITM dilakukan dengan menambahkan autentikasi, seperti tanda tangan digital, sertifikat, atau penggunaan protokol aman seperti TLS.
 
    ---
-## Kesimpulan 
+## 8. Kesimpulan 
 Pada praktikum ini:
 - Protokol Diffie-Hellman berhasil menghasilkan kunci yang sama antara dua pihak.  
 - MITM dapat terjadi jika tidak ada autentikasi.  
 - Untuk keamanan nyata, Diffie-Hellman harus digabungkan dengan mekanisme verifikasi identitas.
 
   ---
-## Bukti Pengumpulan Git
+## 9. Bukti Pengumpulan Git
 commit week7-diffie-hellman
 Author: Lutfiyah Pratama Sari <lutfipratamasari@gmail.com>
 Date:   2026-01-18
