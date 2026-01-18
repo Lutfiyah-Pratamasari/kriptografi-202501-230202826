@@ -12,7 +12,7 @@ Kelas: 5 IKRA
 
 ---
 
-## 1. Tujuan
+## Tujuan
 Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu :
 1. Mengimplementasikan algoritma **DES** untuk blok data sederhana
 2. Menerapkan algoritma **AES** dengan panjang kunci 128 bit
@@ -21,7 +21,7 @@ Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu :
 
 ---
 
-## 2. Dasar Teori
+## Dasar Teori
 Cipher Modern adalah metode kriptografi yang digunakan algoritma matematis dan kunci yang kompleks untuk mengamankan data digital agar tidak dapat dibaca oleh pihak yang tidak berwenang
 
 **DES** adalah cipher simetris yang memakai satu kunci yang sama untuk enkripsi dan deskripsi, namun tingkat keamanan sudah dianggap lemah karena ukuran kuncinya pendek
@@ -82,5 +82,54 @@ print("Decrypted:", decrypted)
 
 ---
 
-## DES  
-! [Hasil DES](screensghootDES.png) 
+### AES
+from Crypto.Cipher import AES
+from Crypto.Random import get_random_bytes
+
+key = get_random_bytes(16)  # 128 bit key
+cipher = AES.new(key, AES.MODE_EAX)
+
+plaintext = b"Modern Cipher AES Example"
+ciphertext, tag = cipher.encrypt_and_digest(plaintext)
+
+print("Ciphertext:", ciphertext)
+
+# Dekripsi
+cipher_dec = AES.new(key, AES.MODE_EAX, nonce=cipher.nonce)
+decrypted = cipher_dec.decrypt(ciphertext)
+print("Decrypted:", decrypted.decode())
+
+### RSA
+from Crypto.PublicKey import RSA
+from Crypto.Cipher import PKCS1_OAEP
+
+# Generate key pair
+key = RSA.generate(2048)
+private_key = key
+public_key = key.publickey()
+
+# Enkripsi dengan public key
+cipher_rsa = PKCS1_OAEP.new(public_key)
+plaintext = b"RSA Example"
+ciphertext = cipher_rsa.encrypt(plaintext)
+print("Ciphertext:", ciphertext)
+
+# Dekripsi dengan private key
+decipher_rsa = PKCS1_OAEP.new(private_key)
+decrypted = decipher_rsa.decrypt(ciphertext)
+print("Decrypted:", decrypted.decode())
+
+### Pertanyaan Diskusi
+1. Apa perbedaan mendasar antara DES, AES, dan RSA dalam hal kunci dan keamanan?
+
+DES, AES, dan RSA
+DES dan AES adalah algoritma simetris, sedangkan RSA asimetris. DES tidak aman, AES sangat aman, dan RSA cocok untuk pertukaran kunci.
+
+2. Mengapa AES lebih banyak digunakan dibanding DES di era modern?
+
+AES lebih banyak digunakan karena lebih aman dan lebih cepat dibanding DES.
+
+3. Mengapa RSA dikategorikan sebagai algoritma asimetris, dan bagaimana proses pembangkitan kuncinya?
+
+RSA sebagai algoritma asimetris
+RSA menggunakan kunci publik dan privat yang dibuat dari bilangan prima besar.
