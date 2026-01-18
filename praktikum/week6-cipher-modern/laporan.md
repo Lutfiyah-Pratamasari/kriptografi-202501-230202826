@@ -69,7 +69,7 @@ Cipher Modern adalah metode kriptografi yang digunakan algoritma matematis dan k
 from Crypto.Cipher import DES
 from Crypto.Random import get_random_bytes
 
-key = get_random_bytes(8)  # kunci 64 bit (8 byte)
+key = get_random_bytes(8)  # 64-bit key
 cipher = DES.new(key, DES.MODE_ECB)
 
 plaintext = b"ABCDEFGH"
@@ -79,45 +79,47 @@ print("Ciphertext:", ciphertext)
 decipher = DES.new(key, DES.MODE_ECB)
 decrypted = decipher.decrypt(ciphertext)
 print("Decrypted:", decrypted)
-
+```
 ---
 
 ### AES
+```
 from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
 
-key = get_random_bytes(16)  # 128 bit key
+key = get_random_bytes(16)  # 128-bit key
 cipher = AES.new(key, AES.MODE_EAX)
 
 plaintext = b"Modern Cipher AES Example"
 ciphertext, tag = cipher.encrypt_and_digest(plaintext)
-
 print("Ciphertext:", ciphertext)
 
 # Dekripsi
 cipher_dec = AES.new(key, AES.MODE_EAX, nonce=cipher.nonce)
 decrypted = cipher_dec.decrypt(ciphertext)
 print("Decrypted:", decrypted.decode())
+```
 
 ### RSA
+```
 from Crypto.PublicKey import RSA
 from Crypto.Cipher import PKCS1_OAEP
 
-# Generate key pair
 key = RSA.generate(2048)
 private_key = key
 public_key = key.publickey()
 
-# Enkripsi dengan public key
+# Enkripsi
 cipher_rsa = PKCS1_OAEP.new(public_key)
 plaintext = b"RSA Example"
 ciphertext = cipher_rsa.encrypt(plaintext)
 print("Ciphertext:", ciphertext)
 
-# Dekripsi dengan private key
+# Dekripsi
 decipher_rsa = PKCS1_OAEP.new(private_key)
 decrypted = decipher_rsa.decrypt(ciphertext)
 print("Decrypted:", decrypted.decode())
+```
 
 ### Pertanyaan Diskusi
 1. Apa perbedaan mendasar antara DES, AES, dan RSA dalam hal kunci dan keamanan?
