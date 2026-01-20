@@ -1,29 +1,42 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 12
+
+Topik: Aplikasi TLS & E-commerce
+
+Nama: Lutfiyah Pratama Sari
+
+NIM: 230202826
+
+Kelas: 5 IKRA
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu :
+1. Menganalisis penggunaan kripografi pada **email** dan **SSL/TLS**
+2. Menjelaskan enkripsi dalam transaksi **e-commerce**
+3. Mengevaluasi isu **etika & privasi** dalam penggunaan kriptografi dikehidupan sehari-hari
 
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+TLS melindungi data e-commerce dengan enkripsi dan autentikasi, menjaga keamanan informasi sensitif dari penyadapan atau manipulasi.
+
+Selain itu, TLS meningkatkan kepercayaan pelanggan dengan memastikan integritas data dan mencegah serangan seperti man-in-the-middle serta phishing.
 
 ---
+## 3. Analisis SSL/TLS pada website e-commerce
+observasi dilakukan menggunakan browser dengan memeriksa sertifikat digital pada dua website e-commerce populer di Indonesia
 
-## 3. Alat dan Bahan
-(- Python 3.x  
-- Visual Studio Code / editor lain  
-- Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
-
+### a. Tokopedia ([https://www.tokopedia.com] (https://www.tokopedia.com))
+- Issuer (CA) : DigiCert Inc
+- Masa berlaku : ± 1 tahun
+- Algoritma kriptografi :
+  a. Public Key : RSA/ECDSA
+  b. Enkripsi Simetris : AES-128 / AES-256
+  c. Hash : SHA-256
+  
+- Status keamanan : HTTPS aktif, koneksi terenkripsi dan tervalidasi
 ---
 
 ## 4. Langkah Percobaan
