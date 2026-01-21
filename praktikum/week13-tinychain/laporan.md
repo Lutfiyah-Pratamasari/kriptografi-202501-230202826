@@ -1,95 +1,88 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 13
+
+Topik: Tinychain
+
+Nama: Lutfiyah Pratama Sari
+
+NIM: 230202826
+
+Kelas: 5 IKRA 
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:
+
+1. Menjelaskan peran hash function dalam blockchain.
+2. Melakukan simulasi sederhana Proof of Work (PoW).
+3. Menganalisis keamanan cryptocurrency berbasis kriptografi.
 
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+TinyChain adalah blockchain sederhana yang digunakan untuk mempelajari mekanisme Proof of Work (PoW). Setiap blok harus melalui proses pencarian hash dengan tingkat kesulitan tertentu sebelum dapat ditambahkan ke rantai, sehingga menjamin keabsahan data.
+
+Mekanisme PoW pada TinyChain membuat perubahan data menjadi sulit dilakukan karena memerlukan perhitungan ulang pada blok-blok berikutnya. Hal ini menjaga keamanan dan integritas data dalam sistem blockchain.
 
 ---
 
-## 3. Alat dan Bahan
-(- Python 3.x  
-- Visual Studio Code / editor lain  
-- Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
+## 3. Hash Function dalam Blockchain
+Fungsi hash kriptografis memiliki karakteristik utama:
+- Deterministik
+- Sulit dibalik (one-way)
+- Perubahan kecil pada input menghasilkan output yang sangat berbeda
+- Output berukuran tetap
+  
+Dalam blockchain, hash digunakan untuk:
+- Menghubungkan blok satu dengan yang lain
+- Menjamin integritas data
+- Mendeteksi perubahan atau pemalsuan data
+---
+
+## 4. Proof of Work (PoW)
+Proof of Work adalah mekanisme konsensus yang mengharuskan penambang (miner) menyelesaikan teka-teki kriptografi dengan mencari nilai nonce yang menghasilkan hash sesuai tingkat kesulitan (difficulty).
+
+Semakin tinggi difficulty, semakin lama waktu yang dibutuhkan untuk menemukan hash yang valid.
 
 ---
 
-## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
-2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+## 5. Hasil Simulasi Mining
+Program TinyChain berhasil melakukan mining beberapa blok dengan:
+
+- Hash SHA-256
+- Difficulty = 4
+- Proses mining menghasilkan hash dengan prefix "0000"
+  selanjutnya hasil berada dalam folder screenshot
+---
+
+## 6. Pertanyaan Diskusi
+1. Mengapa fungsi hash sangat penting dalam blockchain?
+   Fungsi hash penting dalam blockchain karena berperan menjaga integritas data, menghubungkan setiap blok secara aman, dan memudahkan pendeteksian perubahan data sekecil apa pun.
+   
+2. Bagaimana Proof of Work mencegah double spending?
+   Proof of Work mencegah double spending dengan mewajibkan validasi blok melalui proses komputasi, sehingga satu transaksi hanya dapat dicatat pada satu blok yang sah di dalam blockchain.
+   
+3. Apa kelemahan dari PoW dalam hal efisiensi energi?
+Kelemahan PoW dalam efisiensi energi adalah kebutuhan daya komputasi yang sangat besar, karena proses penambangan melibatkan perhitungan berulang yang menghabiskan banyak listrik.
+
+---
+## 7. Kesimpulan
+Blockchain menggunakan fungsi hash untuk menjaga data tetap aman dan utuh antar blok, sementara Proof of Work memastikan setiap transaksi valid dan menghindari pengeluaran ganda. Namun, meskipun PoW menjaga keamanan, mekanisme ini kurang efisien karena memerlukan banyak energi dan daya komputasi.
 
 ---
 
-## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
+## 8. Referensi
+-Yli-Huumo, J., Ko, D., Choi, S., Park, S., & Smolander, K. (2016). Where Is Current Research on Blockchain Technology?—A Systematic Review. PLOS ONE.
+-Stallings, W. (2017). Cryptography and Network Security: Principles and Practice (7th ed.). Pearson.
 
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+---
+
+## 9. Commit Log
 ```
-)
+commit week-13-tinychain
+Author: Lutfiyah Pratama Sari <lutfipratamasari@gmail.com>
+Date:   2026-01-21
 
----
-
-## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
-
-Hasil eksekusi program Caesar Cipher:
-
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
-
----
-
-## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
----
-
-## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
-
----
-
-## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
-
----
-
-## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
-
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+    week13-tinychain: TinyChain Proof of Work
 ```
