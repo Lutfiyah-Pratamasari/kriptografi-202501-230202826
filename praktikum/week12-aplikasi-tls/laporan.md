@@ -28,7 +28,7 @@ Selain itu, TLS meningkatkan kepercayaan pelanggan dengan memastikan integritas 
 ## 3. Analisis SSL/TLS pada website e-commerce
 observasi dilakukan menggunakan browser dengan memeriksa sertifikat digital pada dua website e-commerce populer di Indonesia
 
-### a. Tokopedia (https://www.tokopedia.com)
+### a. Tokopedia (https://www.shopee.com)
 - Issuer (CA) : DigiCert Inc
 - Masa berlaku : ± 1 tahun
 - Algoritma kriptografi :
@@ -43,7 +43,7 @@ observasi dilakukan menggunakan browser dengan memeriksa sertifikat digital pada
 - Status keamanan : HTTPS aktif, koneksi terenkripsi dan tervalidasi
   hasilnya berada di dalam folder screenshot
 
-### b. Lazada
+### b. Lazada (https://www.lazada.com)
 - Issuer (CA) : DigiCert Inc
 - Masa berlaku : ± 1 tahun
 - Algoritma Kriptografi :
