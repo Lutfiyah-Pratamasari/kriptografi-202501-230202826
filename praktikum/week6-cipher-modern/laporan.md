@@ -12,7 +12,7 @@ Kelas: 5 IKRA
 
 ---
 
-## Tujuan
+## 1. Tujuan
 Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu :
 1. Mengimplementasikan algoritma **DES** untuk blok data sederhana
 2. Menerapkan algoritma **AES** dengan panjang kunci 128 bit
@@ -21,7 +21,7 @@ Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu :
 
 ---
 
-## Dasar Teori
+## 2. Dasar Teori
 Cipher Modern adalah metode kriptografi yang digunakan algoritma matematis dan kunci yang kompleks untuk mengamankan data digital agar tidak dapat dibaca oleh pihak yang tidak berwenang
 
 **DES** adalah cipher simetris yang memakai satu kunci yang sama untuk enkripsi dan deskripsi, namun tingkat keamanan sudah dianggap lemah karena ukuran kuncinya pendek
@@ -63,7 +63,7 @@ Cipher Modern adalah metode kriptografi yang digunakan algoritma matematis dan k
 
 ---
 
-## Implementasi Praktikum
+## 3. Implementasi Praktikum
 ### DES
 ```python
 from Crypto.Cipher import DES
@@ -83,7 +83,7 @@ print("Decrypted:", decrypted)
 ---
 
 ### AES
-```
+```python
 from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
 
@@ -101,7 +101,7 @@ print("Decrypted:", decrypted.decode())
 ```
 
 ### RSA
-```
+```python
 from Crypto.PublicKey import RSA
 from Crypto.Cipher import PKCS1_OAEP
 
@@ -120,8 +120,9 @@ decipher_rsa = PKCS1_OAEP.new(private_key)
 decrypted = decipher_rsa.decrypt(ciphertext)
 print("Decrypted:", decrypted.decode())
 ```
+---
 
-### Pertanyaan Diskusi
+### 4. Pertanyaan Diskusi
 1. Apa perbedaan mendasar antara DES, AES, dan RSA dalam hal kunci dan keamanan?
 
 DES, AES, dan RSA
@@ -135,3 +136,21 @@ AES lebih banyak digunakan karena lebih aman dan lebih cepat dibanding DES.
 
 RSA sebagai algoritma asimetris
 RSA menggunakan kunci publik dan privat yang dibuat dari bilangan prima besar.
+
+---
+### 5. Kesimpulan 
+Cipher modern adalah metode enkripsi yang menggunakan algoritma dan perhitungan matematika yang kuat untuk menjaga keamanan data. Algoritma ini lebih aman dan efisien dibandingkan cipher lama, sehingga banyak digunakan dalam sistem keamanan digital seperti internet, perbankan, dan komunikasi online.
+
+---
+### 6. Referensi
+- Stallings, W. (2017).
+Cryptography and Network Security: Principles and Practice (7th ed.).
+Pearson Education.
+
+---
+### 7. Commit Log
+commit week6-cipher-modern
+Author: Lutfiyah Pratama Sari <lutfipratamasari@gmail.com>
+Date:   2026-01-19
+
+    week6-cipher-modern: implementasi cipher modern & laporan praktikum
