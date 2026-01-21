@@ -73,7 +73,9 @@ Blockchain menggunakan fungsi hash untuk menjaga data tetap aman dan utuh antar 
 ---
 
 ## 8. Referensi
+
 -Yli-Huumo, J., Ko, D., Choi, S., Park, S., & Smolander, K. (2016). Where Is Current Research on Blockchain Technology?—A Systematic Review. PLOS ONE.
+
 -Stallings, W. (2017). Cryptography and Network Security: Principles and Practice (7th ed.). Pearson.
 
 ---
