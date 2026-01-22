@@ -1,9 +1,13 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 15
+
+Topik: Tinycoin
+
+Nama: Lutfiyah Pratama Sari
+
+NIM: 230202826
+
+Kelas: 5 IKRA
 
 ---
 
