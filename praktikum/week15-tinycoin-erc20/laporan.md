@@ -1,7 +1,7 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 15
 
-Topik: Tinycoin
+Topik: Tinycoin ERC20
 
 Nama: Lutfiyah Pratama Sari
 
@@ -12,13 +12,17 @@ Kelas: 5 IKRA
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:
 
+1. Mengembangkan proyek sederhana berbasis algoritma kriptografi.
+2. Mendokumentasikan proses implementasi proyek ke dalam repository Git.
+3. Menyusun laporan teknis hasil proyek akhir.
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+TinyCoin adalah token digital yang dikembangkan menggunakan standar ERC20 pada blockchain Ethereum. Standar ini memungkinkan token beroperasi secara konsisten dan kompatibel dengan berbagai dompet digital, smart contract, serta aplikasi terdesentralisasi.
+
+Melalui penerapan smart contract ERC20, seluruh transaksi TinyCoin dijalankan secara otomatis dan transparan. Setiap aktivitas token tercatat permanen di blockchain, sehingga menjamin keamanan, keandalan, dan kepercayaan pengguna.
 
 ---
 
@@ -40,15 +44,6 @@ Contoh format:
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
-
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
-```
-)
 
 ---
 
