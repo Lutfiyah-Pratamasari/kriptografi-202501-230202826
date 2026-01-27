@@ -26,69 +26,75 @@ Melalui penerapan smart contract ERC20, seluruh transaksi TinyCoin dijalankan se
 
 ---
 
-## 3. Alat dan Bahan
-(- Python 3.x  
-- Visual Studio Code / editor lain  
-- Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
+## 3. Teknologi yang digunakan
+- Solidity ^0.8.x
+- OpenZeppelin ERC20
+- Remix IDE
+- Ethereum Virtual Machine 
 
 ---
 
-## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
-2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+## 4. Gambaran Smart Contact TinyCoin
+TinyCoin merupakan token standar ERC20 dengan karakteristik:
+
+- Token Name: TinyCoin
+- Symbol: TNC
+- Desimal: 18
+- Initial supply dicetak ke alamat deployer saat kontrak dibuat
+- Menggunakan OpenZeppelin untuk keamanan dan standarisasi
 
 ---
 
 ## 5. Source Code
+Smart contract dikompilasi dan dideploy menggunakan Remix IDE pada lingkungan JavaScript VM / testnet Ethereum. Setelah proses deployment berhasil, kontrak siap diuji menggunakan fungsi-fungsi ERC20 yang tersedia.
 
 ---
 
-## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
-
-Hasil eksekusi program Caesar Cipher:
-
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
+## 6. Hasil pengujian 
+di dalam folder screenshoot
 
 ---
 
-## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
----
+## 7. Analisis keamanan dasar 
+Beberapa aspek keamanan yang dianalisis:
 
-## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
-
----
-
-## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
+- Overflow dan Underflow
+  Tidak terjadi karena Solidity versi ≥ 0.8 memiliki proteksi otomatis.
+- Reentrancy Attack
+  Kontrak tidak memiliki fungsi kompleks yang memicu reentrancy.
+- Unauthorized Minting
+  Token hanya dicetak satu kali pada constructor.
+  
+Secara keseluruhan, smart contract tergolong aman untuk skala pembelajaran.
 
 ---
 
-## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+## 8. Dokumentasi Teknis
+Dokumentasi teknis lengkap meliputi:
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
-```
+- Penjelasan kontrak ERC20 TinyCoin
+- Hasil pengujian fungsi utama
+- Jawaban pertanyaan diskusi
+- Analisis keamanan dasar
+---
+
+## 9. Referensi
+- Stallings, W. (2017). Cryptography and Network Security
+- Stinson, D. (2019). Cryptography: Theory and Practice
+- OpenZeppelin Documentation
+
+---
+
+## 10. Kesimpulan
+Implementasi TinyCoin ERC20 berhasil dilakukan dengan baik. Smart contract dapat dideploy, diuji, dan berfungsi sesuai standar ERC20. Dokumentasi dan bukti pengujian telah dilampirkan secara lengkap.
+
+----
+## 11. Commit Log
+
+commit week15-tinycoin-erc20
+Author: Lutfiyah Pratama Sari <lutfipratama@gmail.com >
+Date:   2026-01-27
+
+    week15-tinycoint-erc20: Proyek kelompok Tinycoin ERC20
+
+---
